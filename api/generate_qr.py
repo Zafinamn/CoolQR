@@ -4,7 +4,7 @@ import io
 
 app = Flask(__name__)
 
-@app.route('/', methods=['POST'])
+@app.route('/api/generate_qr', methods=['POST'])
 def generate_qr():
     data = request.form.get('data', 'Hello QRv1')
     fill_color = request.form.get('fill_color', '#000000')
