@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>QRv1 Generator</title>
+</head>
+<body>
+  <h1>QRv1 QR Code Generator</h1>
+  <form id="qrForm" method="POST" action="/api/generate_qr">
+    <label>Enter text or URL:</label><br>
+    <input type="text" name="data" required><br><br>
+
+    <label>Fill color:</label>
+    <input type="color" name="fill_color" value="#000000"><br><br>
+
+    <label>Background color:</label>
+    <input type="color" name="back_color" value="#ffffff"><br><br>
+
+    <label>Box size:</label>
+    <input type="number" name="box_size" value="10" min="1" max="50"><br><br>
+
+    <label>Border:</label>
+    <input type="number" name="border" value="4" min="0" max="20"><br><br>
+
+    <label>Transparent background:</label>
+    <input type="checkbox" name="transparent_bg"><br><br>
+
+    <button type="submit">Generate QR</button>
+  </form>
+</body>
+</html>
