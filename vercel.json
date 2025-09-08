@@ -4,8 +4,8 @@
     { "src": "api/*.py", "use": "@vercel/python" }
   ],
   "routes": [
-    { "src": "/api/generate_qr", "dest": "api/generate_qr.py" },
-    { "src": "/api/download_zip", "dest": "api/download_zip.py" },
+    { "src": "/api/generate_qr", "dest": "/api/generate_qr.py" },
+    { "src": "/api/download_zip", "dest": "/api/download_zip.py" },
     { "src": "/", "dest": "/index.html" }
   ]
 }
